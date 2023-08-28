@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ['latin'] });
 const userSource = new UserSource(holaplex, db);
 
 export const metadata: Metadata = {
-  title: 'Holaplex Blockchain Battle',
+  title: 'Space Cream Battle',
   description: 'To celebrate & showcase HUB’s multi-chain support Holaplex is hosting blockchain battle between Solana and Polygon',
 }
 
