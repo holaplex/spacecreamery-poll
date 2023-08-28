@@ -280,7 +280,7 @@ export default function Home({ session }: HomeProps) {
             {userVote ? (
               <>
                 <span className="text-white text-2xl font-semibold mt-12">
-                  You chose {userVote?.mint?.collection?.blockchain}!
+                  Thanks for voting!
                 </span>
                 <div className="flex gap-6 mt-6">
                   <div className="flex flex-col gap-2 items-center justify-center py-4 px-8 rounded-lg 
