@@ -208,10 +208,10 @@ export default function Home({ session }: HomeProps) {
               presents…. 🎉
             </span> */}
             <span className="text-white text-4xl md:text-6xl font-semibold md:font-extrabold my-3">
-              SPACECREAM BATTLE!
+              SPACE CREAM BATTLE!
             </span>
             <p className="text-neautraltext text-sm md:text-base max-w-2xl text-center">
-              Win a Spacecream Digital Collectible by voting (aka minting) for your favorite! 
+              Win a Space Cream Digital Collectible by voting (aka minting) for your favorite! 
               Voting will be open for 3 days, whichever team
               gets the most mints, wins. Those who vote for the winning
               team will get a chance to win the NFT! Those who vote for
