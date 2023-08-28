@@ -148,8 +148,8 @@ export default function Home({ session }: HomeProps) {
         <Image
           src="/img/logo.png"
           alt="site logo"
-          width={199}
-          height={18}
+          width={360}
+          height={60}
           className="py-3"
         />
         {me && (
@@ -203,15 +203,19 @@ export default function Home({ session }: HomeProps) {
           </>
         ) : (
           <div className="flex flex-col items-center">
-            <span className="text-neautraltext text-sm md:text-base">
+            {/* <span className="text-neautraltext text-sm md:text-base">
               🎉 To celebrate & showcase HUB’s multi-chain support Holaplex
               presents…. 🎉
-            </span>
+            </span> */}
             <span className="text-white text-4xl md:text-6xl font-semibold md:font-extrabold my-3">
-              BLOCKCHAIN BATTLE!
+              SPACECREAM BATTLE!
             </span>
             <p className="text-neautraltext text-sm md:text-base max-w-2xl text-center">
-              Voting is closed. A lucky winner will be announced on Monday.
+              Win a Spacecream Digital Collectible by voting (aka minting) for your favorite! 
+              Voting will be open for 3 days, whichever team
+              gets the most mints, wins. Those who vote for the winning
+              team will get a chance to win the NFT! Those who vote for
+              the losing team get… NOTHING, so choose wisely!
             </p>
 
             <div className="flex gap-3 md:gap-8 items-center mt-6 justify-around">
@@ -224,8 +228,7 @@ export default function Home({ session }: HomeProps) {
                     className="h-0 w-0 border-t-[20px] border-l-[20px] border-b-[20px] 
                       border-solid border-t-transparent border-b-transparent border-l-backdrop mr-4 -ml-[1px]"
                   />
-                  TEAM <CryptoIcon type={collectibleA!.collection.blockchain} />
-                  {collectibleA!.collection.blockchain}
+                  TEAM CONE
                   <div
                     className="h-0 w-0 border-t-[20px] border-r-[20px] border-b-[20px] 
                       border-solid border-t-transparent border-b-transparent border-r-backdrop ml-4 -mr-[1px]"
@@ -255,9 +258,7 @@ export default function Home({ session }: HomeProps) {
                       className="h-0 w-0 border-t-[20px] border-l-[20px] border-b-[20px] 
                       border-solid border-t-transparent border-b-transparent border-l-backdrop mr-4 -ml-[1px]"
                     />
-                    TEAM
-                    <CryptoIcon type={collectibleB!.collection.blockchain} />
-                    {collectibleB!.collection.blockchain}
+                    TEAM CUP
                     <div
                       className="h-0 w-0 border-t-[20px] border-r-[20px] border-b-[20px] 
                       border-solid border-t-transparent border-b-transparent border-r-backdrop ml-4 -mr-[1px]"
@@ -282,9 +283,10 @@ export default function Home({ session }: HomeProps) {
                   You chose {userVote?.mint?.collection?.blockchain}!
                 </span>
                 <div className="flex gap-6 mt-6">
-                  <div className="flex flex-col gap-2 items-center justify-center py-4 px-8 rounded-lg solana-gradient">
+                  <div className="flex flex-col gap-2 items-center justify-center py-4 px-8 rounded-lg 
+                  polygon-gradient">
                     <span className="text-backdrop font-bold">
-                      {collectibleA!.collection.blockchain} votes
+                      Cone votes
                     </span>
                     <span className="text-backdrop text-3xl font-bold">
                       {collectibleA!.collection.totalMints}
@@ -295,7 +297,7 @@ export default function Home({ session }: HomeProps) {
                   polygon-gradient"
                   >
                     <span className="text-backdrop font-bold">
-                      {collectibleB!.collection.blockchain} votes
+                      Cup votes
                     </span>
                     <span className="text-backdrop text-3xl font-bold">
                       {collectibleB!.collection.totalMints}
@@ -319,13 +321,13 @@ export default function Home({ session }: HomeProps) {
 
                 <div className="flex gap-6 mt-6">
                   <button
-                    className="font-bold rounded-full text-contrast py-3 px-6 transition hover:opacity-80 flex gap-2 items-center
-                bg-gradient-to-r from-[#71EA9F] via-[#8AA7CC] to-[#A16AF6] disabled:opacity-70"
+                    className="font-bold rounded-full text-contrast py-3 px-6 transition hover:opacity-80 flex gap-2 items-center 
+                bg-gradient-to-r from-[#8A46FF] to-[#6E38CC] disabled:opacity-70"
                     onClick={() => onMint(Vote.A)}
                     disabled={loading}
                   >
-                    {loading ? <BounceLoader size={21} color="#212122" /> : <CryptoIcon type={collectibleA!.collection.blockchain} />}
-                    {`Mint ticket on ${collectibleA!.collection.blockchain}`}
+                    {/* {loading ? <BounceLoader size={21} color="#212122" /> : <CryptoIcon type={collectibleA!.collection.blockchain} />} */}
+                    {`Mint ticket to vote Cone`}
                   </button>
                   <button
                     className="font-bold rounded-full text-contrast py-3 px-6 transition hover:opacity-80 flex gap-2 items-center 
@@ -333,8 +335,8 @@ export default function Home({ session }: HomeProps) {
                     onClick={() => onMint(Vote.B)}
                     disabled={loading}
                   >
-                    {loading ? <BounceLoader size={21} color="#212122" /> : <CryptoIcon type={collectibleB!.collection.blockchain} />}
-                    {`Mint ticket on ${collectibleB!.collection.blockchain}`}
+                    {/* {loading ? <BounceLoader size={21} color="#212122" /> : <CryptoIcon type={collectibleB!.collection.blockchain} />} */}
+                    {`Mint ticket to vote Cup`}
                   </button>
                 </div>
               </>
