@@ -258,7 +258,7 @@ export default function Home({ session }: HomeProps) {
                       className="h-0 w-0 border-t-[20px] border-l-[20px] border-b-[20px] 
                       border-solid border-t-transparent border-b-transparent border-l-backdrop mr-4 -ml-[1px]"
                     />
-                    TEAM CUP
+                    TEAM SPRINKLES
                     <div
                       className="h-0 w-0 border-t-[20px] border-r-[20px] border-b-[20px] 
                       border-solid border-t-transparent border-b-transparent border-r-backdrop ml-4 -mr-[1px]"
@@ -297,7 +297,7 @@ export default function Home({ session }: HomeProps) {
                   polygon-gradient"
                   >
                     <span className="text-backdrop font-bold">
-                      Cup votes
+                      Sprinkles votes
                     </span>
                     <span className="text-backdrop text-3xl font-bold">
                       {collectibleB!.collection.totalMints}
@@ -336,7 +336,7 @@ export default function Home({ session }: HomeProps) {
                     disabled={loading}
                   >
                     {/* {loading ? <BounceLoader size={21} color="#212122" /> : <CryptoIcon type={collectibleB!.collection.blockchain} />} */}
-                    {`Mint ticket to vote Cup`}
+                    {`Mint ticket to vote Sprinkles`}
                   </button>
                 </div>
               </>
